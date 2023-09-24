@@ -10,10 +10,8 @@ export default function EmojiPicker({isVisible, children, onClose}){
                     <Pressable onPress={onClose}>
                         <MaterialIcons name="close" color="#fff" size={22}/>
                     </Pressable>
-                    <View>
-                        {children}
-                    </View>
                 </View>
+                {children}
             </View>
         </Modal>
     )
